@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Github User Organizations</title>
+  </head>
+  <body>
+    <form class="search-form" autocomplete="off">
+      <input type="text" id="githubUser" placeholder="Insert Github Username">
+      <input type="submit" id="button" value="Get Organizations">
+    </form>
+
+    <section class="no-orgo is-hidden">
+        <div class="no-orgo-container is-centered">
+            <img class="no-orgo-pic" src="http://findicons.com/files/icons/1700/2d/512/emoticon_sad.png" alt="sad emoticon">
+            <div class="no-orgo-message">
+                <span class="message">This user isn't apart of any organizations!</span>
+            </div>
+        </div>
+      </section>
+
+    <div class="content"></div>
+    <!-- Handlebars Template Goes Here -->
+
+    <script id="org-template" type="text/x-handlebars-template">
+        <img src="{{image}}">
+        <h2>{{title}}</h2>
+    </script>
+    <script src="scripts/vendor/jquery-3.1.1.min.js"></script>
+    <script src="scripts/vendor/handlebars-v4.0.5.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

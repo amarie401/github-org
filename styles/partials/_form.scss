@@ -1,0 +1,33 @@
+form,
+input {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+form {
+ background: linear-gradient(to left, lightblue, #efefef);
+}
+
+input {
+  border-style: none;
+  box-sizing: border-box;
+  color: $primaryColor;
+  font-size: 18px;
+  height: 50px;
+  margin: 20px;
+  padding: 15px;
+  text-align: center;
+  width: 300px;
+}
+
+#button {
+  background: $primaryColor;
+  border-radius: 2px;
+  border-style: none;
+  color: $secondaryColor;
+  letter-spacing: .09em;
+  margin-top: 1em;
+  text-transform: uppercase;
+}
